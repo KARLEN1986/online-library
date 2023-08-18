@@ -8,7 +8,7 @@ Welcome to the Online Library project built with Java Spring Boot. This project 
 - Maven 3 for project build.
 - MySQL 8 or higher for the database.
 - JSON Web Tokens (JWT) for authentication and authorization.
-- Lombok for reducing boilerplate code.
+- Lombok for reducing boilerplate code and enabling `@Slf4j` for logging.
 - MapStruct for object mapping.
 - OpenCSV for handling CSV file operations.
 - Hibernate Validator (Jakarta Validation) for bean validation.
