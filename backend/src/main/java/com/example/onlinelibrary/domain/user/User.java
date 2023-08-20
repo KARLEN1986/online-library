@@ -1,6 +1,7 @@
 package com.example.onlinelibrary.domain.user;
 
 import com.example.onlinelibrary.domain.book.Book;
+import com.example.onlinelibrary.domain.purchase.Purchase;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -67,6 +68,9 @@ public class User {
             joinColumns = @JoinColumn(name = "user_id", referencedColumnName = "id"),
             inverseJoinColumns = @JoinColumn(name = "book_id", referencedColumnName = "id"))
     private List<Book> books;
+
+    @OneToMany(mappedBy = "user")
+    private List<Purchase> purchases;
 
 
 }

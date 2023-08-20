@@ -26,7 +26,7 @@ public class RecommendationServiceImpl implements RecommendationService {
 
     private static final Logger logger = LoggerFactory.getLogger(RecommendationServiceImpl.class);
 
-    private final PurchaseService purchaseService;
+    private final PurchaseServiceImpl purchaseService;
 
     private final BookService bookService;
 
