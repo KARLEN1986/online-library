@@ -2,7 +2,7 @@
 
 Welcome to the Online Library project built with Java Spring Boot. This project demonstrates an example of using various technologies to create a web application for managing users, books, and recommendations in an online library.
 
-## Technologies
+## <ins>Technologies</ins>
 
 - Java 17.
 - Maven 3 for project build.
@@ -14,7 +14,7 @@ Welcome to the Online Library project built with Java Spring Boot. This project 
 - Hibernate Validator (Jakarta Validation) for bean validation.
 - Spring doc for generating API documentation using OpenAPI (Swagger) specifications.
 
-## Installation
+## <ins>Installation</ins>
 
 1. Clone this repository to your computer.
 2. Make sure you have Java and Maven installed.
@@ -25,9 +25,9 @@ This project uses Swagger to provide interactive API documentation. To access th
 
 - Local: `http://localhost:8181/swagger-ui/index.html#/`
 
-## API Resources
+## <ins>API Resources</ins>
 
-### Book Controller
+### <ins>Book Controller</ins>
 
 #### Get all books
 
@@ -49,14 +49,14 @@ This project uses Swagger to provide interactive API documentation. To access th
 - Method: DELETE
 - Path: `/api/v1/books/{id}`
 
-### Recommendation Controller
+### <ins>Recommendation Controller</ins>
 
 #### Get book recommendations
 
 - Method: GET
 - Path: `/api/v1/recommendations/{userId}`
 
-### Auth Controller
+### <ins>Auth Controller</ins>
 
 #### User registration
 
@@ -73,7 +73,7 @@ This project uses Swagger to provide interactive API documentation. To access th
 - Method: POST
 - Path: `/api/v1/auth/login`
 
-### User Controller
+### <ins>User Controller</ins>
 
 #### Update user information
 
@@ -99,5 +99,31 @@ This project uses Swagger to provide interactive API documentation. To access th
 
 - Method: DELETE
 - Path: `/api/v1/users/{id}`
+
+### <ins>Purchase Controller</ins>
+
+##### Rate a Purchase
+
+- Method: POST
+- Path: /api/v1/purchases/rate/{purchaseId}/{rating}
+  
+##### Buy a Book
+
+- Method: POST
+- Path: /api/v1/purchases/buy/{bookId}
+
+##### Get Purchase Details by ID
+
+- Method: GET
+- Path: /api/v1/purchases/{purchaseId}
+
+
+##### Get All Purchases Made by the User
+
+- Method: GET
+- Path: /api/v1/purchases/user
+
+
+
 
 
